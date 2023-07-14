@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+        <title>Reporte del Clima</title>
+    </head>
+<body>
+    
+    <div class="contenedorTodo">
+
+        <div class="barraBuscador">
+            <input type="text" name="buscar" id="buscarClima" placeholder="Buscar...">
+            <span class="material-symbols-outlined" id="botonBuscar">search</span>
+        </div>
+
+        <div class="mostrarInfo">
+            <div id="cargaDeInformacion"></div>
+            <div class="contenidoTexto">
+                <div class="contenidoTextoNombre"></div>
+                <div class="contenidoTextoHora"></div>
+                <div class="TemperaturayViento">
+                    <img src="img/Termometro.png" alt="termometro" id="iconoClimaTermometro">
+                    <div class="contenidoTextoTemperatura"></div>
+                    <img src="img/Viento.png" alt="viento" id="iconoClimaViento">
+                    <div class="contenidoTextoViento"></div>
+                </div>
+                <div class="contenidoTextoClima"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contenedorPieDePagina">
+          <p>&copy; 2023 Jones Lopez. Gracias a <a href="https://www.freepik.com" style="text-decoration: none;">Freepik</a> por las imagenes e iconos</p>
+        </div>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>

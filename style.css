@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: rgb(29, 4, 87);
+}
+
+/* Todo el Codigo luego del Body */
+
+.contenedorTodo{
+    margin: 50px auto;
+    min-width: 350px;
+    max-width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Toda la barra de Buscador */
+
+.barraBuscador{
+    display: flex;
+    align-items: center;
+}
+
+.barraBuscador #buscarClima{
+    margin: 8px 0 0 20px;
+    padding: 0 8px;
+    width: 370px;
+    height: 30px;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.barraBuscador #buscarClima:focus{
+    outline: none;
+}
+
+.barraBuscador #botonBuscar{
+    margin-top: 5px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Informacion que se mostrara al Usuario junto con su animacion */
+
+.mostrarInfo{
+    max-width: 100%;
+    height: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    transition: height .8s ease;
+}
+
+.ventanaDeInformacion{
+    padding-top: 20px;
+    height: 500px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: height .8s ease;
+}
+
+h3{
+    margin-top: -30px ;
+}
+
+.contenidoTexto{
+    display: none;
+}
+
+.mostrarContenidoTexto{
+    display: block;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 1px;
+    transition: all 1s;
+}
+
+.TemperaturayViento{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.contenidoTextoTemperatura, .contenidoTextoViento{
+    margin-left: -40px;
+}
+
+#iconoClimaTermometro, #iconoClimaViento{
+    width: 40px;
+}
+
+.iconoDelClima{
+    width: 220px;
+    transition : all .5s ease-in;
+}
+
+/* Animacion de carga */
+
+#cargaDeInformacion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    border: 3px solid #000;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: girar 1s infinite linear;
+    display: none;
+}
+
+@keyframes girar{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.contenedorPieDePagina{
+    padding-top: 500px;
+}
+
+.contenedorPieDePagina p{
+    color: #fff;
+    font-size: 18px;
+    font-style: bold;
+}
